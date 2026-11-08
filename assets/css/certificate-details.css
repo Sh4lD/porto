@@ -1,0 +1,238 @@
+
+/* ==========================================================
+   CERTIFICATE DETAILS
+   Shalom Natanael Dano
+   ========================================================== */
+
+
+/* Certificate Preview */
+
+.certificate-image-wrapper {
+  width: 100%;
+  min-height: 350px;
+  padding: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--surface-color);
+
+  border: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 85%);
+
+  border-radius: 12px;
+}
+
+.certificate-image-wrapper img {
+  display: block;
+
+  width: 100%;
+  max-height: 650px;
+
+  object-fit: contain;
+
+  border-radius: 6px;
+}
+
+
+/* Image Not Found */
+
+.certificate-image-error {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.certificate-image-error i {
+  font-size: 60px;
+  color: var(--accent-color);
+  display: block;
+  margin-bottom: 15px;
+}
+
+.certificate-image-error p {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+
+/* Certificate Content */
+
+.service-details .content h3 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.service-details .content > p {
+  line-height: 1.8;
+}
+
+.service-details .content .badge {
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* Skills & Competencies */
+
+.service-details .features h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.service-details .feature-box {
+  min-height: 55px;
+}
+
+.service-details .feature-box h4 {
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+
+/* Certificate Additional Information */
+
+.certificate-additional h4 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.certificate-additional p {
+  line-height: 1.8;
+}
+
+
+/* Certificate Information Sidebar */
+
+.service-details .service-info {
+  padding: 30px;
+
+  border-radius: 10px;
+
+  background: var(--surface-color);
+
+  border: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.service-details .service-info h4 {
+  margin-bottom: 25px;
+}
+
+.service-details .service-info .info-item {
+  margin-bottom: 22px;
+}
+
+.service-details .service-info .info-item h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.service-details .service-info .info-item p {
+  font-size: 14px;
+  margin-bottom: 0;
+  overflow-wrap: anywhere;
+}
+
+
+/* Download Button */
+
+.service-details #certificate-download {
+  display: block;
+  padding: 12px 15px;
+  font-size: 14px;
+  text-align: center;
+  white-space: normal;
+}
+
+#certificate-download {
+  background-color: #e9ecef;
+  color: #495057;
+  border: 1px solid #dee2e6;
+  transition: all 0.3s ease;
+}
+
+#certificate-download:hover {
+  background-color: #dee2e6;
+  color: #212529;
+  border-color: #ced4da;
+}
+
+
+/* Related Certificates */
+
+.service-details .related-services h4 {
+  margin-bottom: 25px;
+}
+
+.service-details .related-services .service-item {
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--default-color), transparent 90%);
+}
+
+.service-details .related-services .service-item:last-child {
+  border-bottom: none;
+}
+
+.service-details .related-services .service-item h5 {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.service-details .related-services .service-item p {
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+
+/* Back Navigation */
+
+.certificate-navigation {
+  margin-top: 30px;
+}
+
+.certificate-navigation .btn {
+  padding: 10px 20px;
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 991px) {
+
+  .certificate-image-wrapper {
+    min-height: 280px;
+    padding: 15px;
+  }
+
+  .certificate-image-wrapper img {
+    max-height: 500px;
+  }
+
+  .service-details .service-info {
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .certificate-image-wrapper {
+    min-height: 200px;
+    padding: 10px;
+  }
+
+  .certificate-image-wrapper img {
+    max-height: 400px;
+  }
+
+  .service-details .content h3 {
+    font-size: 23px;
+  }
+
+}

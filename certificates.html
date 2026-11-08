@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Certificates | Shalom Natanael Dano</title>
+  <meta name="description" content="Certificates and training records of Shalom Natanael Dano.">
+
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Ubuntu:wght@400;500;700&family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .certificates-page {
+      min-height: 100vh;
+      padding: 70px 0 80px;
+    }
+
+    .certificates-header {
+      margin-bottom: 32px;
+    }
+
+    .certificates-header .eyebrow {
+      display: inline-block;
+      color: var(--accent-color);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    .certificates-header h1 {
+      font-family: var(--heading-font);
+      font-size: clamp(30px, 4vw, 42px);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+
+    .certificates-header p {
+      color: color-mix(in srgb, var(--default-color), transparent 25%);
+      max-width: 720px;
+      margin: 0;
+    }
+
+    .certificate-list {
+      background: var(--surface-color);
+      border: 1px solid color-mix(in srgb, var(--default-color), transparent 88%);
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px color-mix(in srgb, var(--default-color), transparent 94%);
+    }
+
+    .certificate-link {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 62px;
+      padding: 13px 20px;
+      color: var(--default-color);
+      text-decoration: none;
+      border-bottom: 1px solid color-mix(in srgb, var(--default-color), transparent 86%);
+      transition: background-color .2s ease, color .2s ease;
+    }
+
+    .certificate-link:last-child {
+      border-bottom: 0;
+    }
+
+    .certificate-link:hover {
+      background: color-mix(in srgb, var(--accent-color), transparent 94%);
+      color: var(--accent-color);
+    }
+
+    .pdf-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: 0 0 34px;
+      width: 34px;
+      height: 34px;
+      background: transparent;
+      color: #333333;
+      font-size: 24px;
+    }
+
+    .certificate-name {
+      flex: 1;
+      font-size: 15px;
+      font-weight: 600;
+      overflow-wrap: anywhere;
+    }
+
+    .download-icon {
+      color: color-mix(in srgb, var(--default-color), transparent 45%);
+      font-size: 17px;
+      transition: transform .2s ease;
+    }
+
+    .certificate-link:hover .download-icon {
+      color: var(--accent-color);
+      transform: translateY(2px);
+    }
+
+    .certificates-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 24px;
+      flex-wrap: wrap;
+    }
+
+    .certificates-count {
+      color: color-mix(in srgb, var(--default-color), transparent 35%);
+      font-size: 14px;
+    }
+
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--accent-color);
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 576px) {
+      .certificates-page { padding: 45px 0 60px; }
+      .certificate-link { padding: 12px 14px; gap: 12px; }
+      .certificate-name { font-size: 14px; }
+    }
+  </style>
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i> Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#services" class="active"><i class="bi bi-award navicon"></i> Certificates</a></li>
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="social-links text-center">
+        <a href="https://www.linkedin.com/in/shalom-natanael-dano-865ab52b8/" class="linkedin" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i></a>
+        <a href="mailto:shald030902@gmail.com" class="email"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="certificates-page section light-background">
+      <div class="container" data-aos="fade-up">
+        <div class="certificates-header">
+          <span class="eyebrow">Documents & Achievements</span>
+          <h1>Certificates & Training</h1>
+          <p>A collection of professional certifications, courses, workshops, and academic achievements. Select a document to view or download it from Google Drive.</p>
+        </div>
+
+        <div class="certificate-list">
+          <a class="certificate-link" href="https://drive.google.com/file/d/1WDQXQ6fAY46myejuWB82-v7ZfvAsdRL0/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="atmi">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">ATMI Industrial Training Certificate</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1jxkCfRGKZs1G9y7NOgAMy00tWlk9D2Zn/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="bsi-bootcamp">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">IT Bootcamp 2024 – Software Development</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1PNAdUtH3A6eIbX_i4aiq-Pci98-SNPPn/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="bsi-cyber-security">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Cybersecurity Certificate – Cisco Networking Academy</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1j3FW5ZWCS_L_n_neP-mBKdN7IdSNly7o/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="bsi-toefl">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">English Language Proficiency Certificate (TOEFL)</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1u3THF01x3cdS8Z2wmp5NBMiBtsA_i_cs/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="bsi-workshop-it">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">IT Workshop 2024 Certificate</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1J87WS18_fhCz5r9NRw37hSbdalkDP57i/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="ai-office">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Certificate in AI for Office Productivity</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1MNTDXl3lOVpVs3SVvXjPdkVUedjUWZGS/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="bnsp">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">BNSP Program Analysis Competency Certificate</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1_9KZufnnBY_1B1D5y6CK_quRv857CL1E/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="microsoft-excel">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Microsoft Excel Certification</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1QzUanKxFOgPVfhAEy32VQqb8lQI5UirE/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="microsoft-outlook">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Microsoft Outlook Certification</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1MS7cIt1_EBduC30BpMpiyIAMpBjYUBh7/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="microsoft-powerpoint">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Microsoft PowerPoint Certification</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1cXNRSFwSlWPruDd3pk1uyCeffMShS4ua/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="microsoft-word">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Microsoft Word Certification</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1U6vfoCV5Olo8M9O_Ud1Q-YF5dvTS7u9h/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="mtcna">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">MikroTik Certified Network Associate (MTCNA)</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1IQDR2UT5nmJvR_rwuILKJ2iEw_gsROYB/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="smk-teknologi-tepat-guna">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Appropriate Technology Competition Award</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1y1SZydsukNyEC6EslrY4DWADxH9yYU1q/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="smk-pkl-1">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Industrial Work Practice at PT Chao Long Motor Parts Indonesia</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1yvrRTfHaGAffS3dhfSmfVwPvuF-p0ImC/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="smk-pkl-2">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Industrial Work Practice at PT Schneider Electric Indonesia</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/19Y2cTv4IGlgUVs3njKsbfcLQhu8a4d3V/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="smk-surat-keterangan-pkl">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Industrial Work Practice (Internship) Completion Letter</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1pSudZrFrP6TaZllxYuMk1KD7H9OZ2KMe/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="smp-baris-berbaris">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">Flag Raisers Marching Drill Competition Award</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+          <a class="certificate-link" href="https://drive.google.com/file/d/1gyOU9YKnSm4URfoX-K2n83sIJ6PuTEcb/view?usp=sharing" target="_blank" rel="noopener noreferrer" data-certificate="upb-workshop-it">
+            <span class="pdf-icon"><i class="bi bi-file-earmark-pdf-fill"></i></span>
+            <span class="certificate-name">IT Workshop 2020 Certificate</span>
+            <span class="download-icon"><i class="bi bi-download"></i></span>
+          </a>
+        </div>
+
+        <div class="certificates-footer">
+          <span class="certificates-count">18 certificates and training documents</span>
+          <a href="index.html#services" class="back-link"><i class="bi bi-arrow-left"></i> Back to Portfolio</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+    <div class="container">
+      <div class="copyright text-center">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Shalom Natanael Dano</strong> <span>All Rights Reserved</span></p>
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/" target="_blank" rel="noopener">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
